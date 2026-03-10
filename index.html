@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TECHNAF Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="hero" id="heroSection">
+<div class="video-bg">
+  <video autoplay muted loop playsinline>
+    <source src="background.mp4" type="video/mp4">
+  </video>
+</div>
+  
+  <div class="button-group">
+    <button class="shop-btn" id="btnContact">
+      <span class="bg"></span>
+      <span class="label">CONTACT</span>
+    </button>
+    <button class="shop-btn" id="btnShop">
+      <span class="bg"></span>
+      <span class="label">SHOP</span>
+    </button>
+    <button class="shop-btn" id="btnUpcoming">
+      <span class="bg"></span>
+      <span class="label">UPCOMING</span>
+    </button>
+  </div>
+  <div id="home" class="section active">
+    <h2>Homepage</h2>
+    <div class="orders-box">
+      <h1>YOUR ORDERS</h1>
+      <div id="orderList"></div>
+    </div>
+  </div>
+ 
+  <div id="contact" class="section">
+    <h2></h2>
+    <h2>Contact Us</h2>
+    <div class="button-div">
+      <button class="insta-btn" onclick="window.open('https://www.instagram.com/7nite.technaf/','_blank')">INSTAGRAM</button>
+      <button class="fb-btn" onclick="window.open('https://www.facebook.com/share/189VGNpwRU/','_blank')">FACEBOOK</button>
+    </div>
+    <h2>7ENITE@GMAIL.COM</h2>
+  </div>
+   <div id="shop" class="section">
+<h2>Shop</h2>
+
+<div class="shop-toggle">
+
+<button class="real-btn" onclick="showProducts('best')">
+<span class="bg"></span>
+<span class="label">BEST SELLING</span>
+</button>
+
+<button class="real-btn" onclick="showProducts('latest')">
+<span class="bg"></span>
+<span class="label">LATEST</span>
+</button>
+
+</div>
+
+<div class="product-card">
+
+<img id="productImage" src="product1.jpg">
+
+<h3 id="productName">Advance Mat Light + Counter</h3>
+
+<p>Price: ৳1200</p>
+
+<p>Rating: ⭐⭐⭐⭐</p>
+
+<button class="real-btn" onclick="buyProduct('Advance Mat Light + Counter')">
+<span class="bg"></span>
+<span class="label">BUY</span>
+</button>
+
+</div>
+
+<div class="review-box">
+
+<h3>REVIEWS</h3>
+
+<div id="reviewList"></div>
+
+<button class="real-btn" onclick="toggleReviewForm()">
+<span class="bg"></span>
+<span class="label">ADD REVIEW +</span>
+</button>
+
+<div id="reviewForm" style="display:none; margin-top:20px;">
+
+<input type="text" id="reviewName" placeholder="Your Name"><br><br>
+
+<textarea id="reviewText" placeholder="Write your review"></textarea><br><br>
+
+<button class="shop-btn" onclick="submitReview()">
+<span class="bg"></span>
+<span class="label">SUBMIT</span>
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="upcoming" class="section">
+
+<h2>Upcoming Products</h2>
+
+<p>Stay tuned for new releases!</p>
+
+</div>
+
+<div id="checkout" class="section">
+
+<h2>Checkout</h2>
+
+<p>Product: <span id="selectedProduct"></span></p>
+
+<input type="text" id="name" placeholder="Your Name"><br><br>
+
+<input type="text" id="phone" placeholder="Phone Number"><br><br>
+
+<input type="text" id="address" placeholder="Current Address"><br><br>
+
+<h2>PAY AT THIS NUMBER:+8801845643029</h2>
+  <p style= "text-align: center;">“Disclaimer: The photo shown is for illustrative purposes only. The actual product may differ in appearance, color, size, or features.”</p>
+
+<button class="shop-btn" onclick="placeOrder()">
+<span class="bg"></span>
+<span class="label">PLACE ORDER</span>
+</button>
+
+</div>
+
+<script src="store.js"></script>
+
+</body>
+</html>
