@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="login-container">
+    <h1>Admin Login</h1>
+
+    <input type="email" id="adminEmail" placeholder="Email">
+    <input type="password" id="adminPassword" placeholder="Password">
+
+    <button class="shop-btn" onclick="adminLogin()">
+      <span class="bg"></span>
+      <span class="label">LOGIN</span>
+    </button>
+
+    <p id="loginError" style="color:red; margin-top:10px;"></p>
+  </div>
+
+  <script src="admin-panel.js"></script>
+</body>
+</html>
