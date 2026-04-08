@@ -1,6 +1,6 @@
 // Hardcoded Admin Credentials
 const ADMIN_EMAIL = "playerthesigma@gmail.com";
-const ADMIN_PASSWORD = "TechnaF2026"; // change as needed
+const ADMIN_PASSWORD = "WE_ARE_WEALTHY205381416"; // change as needed
 
 // Login Function
 function adminLogin() {
